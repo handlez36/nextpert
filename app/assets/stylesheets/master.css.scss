@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 .navbar.navbar-default {
-  background-color: #337AB7;
+  /*background-color: #337AB7;*/
   border-radius: 0;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background-image: url('dark_wood.png');
 }
 
 .navbar-default .navbar-brand {
@@ -14,6 +16,8 @@
 
 .navbar-default .navbar-nav > li > a {
   color: white;
+  font-weight: 200px;
+  font-family: "Helvetica Neue", Helvetica;
 }
 
 .navbar-default .navbar-nav > li > a.courses_link {
