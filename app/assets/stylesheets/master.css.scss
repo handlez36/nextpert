@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.navbar.navbar-default {
+  background-color: #337AB7;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: 32px;
+  font-family: 'Righteous', cursive;
+  padding-right: 25px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a.courses_link {
+  color: white;
+  padding-top: 15px;
+}
