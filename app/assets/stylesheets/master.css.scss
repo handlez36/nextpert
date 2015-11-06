@@ -64,3 +64,44 @@ body {
   background: url('cream_pixels.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin: 10px;
+}
+
+.nav.navbar-nav.navbar-right {
+  padding: 10px;
+}
+
+.nav.navbar-nav.navbar-right a {
+  color: white;
+  font-family: 'Righteous', cursive;
+  padding-left: 10px;
+}
+
+.form-group {
+  font-family: 'Righteous', cursive;
+  font-weight: 100;
+  margin-top:10px;
+}
+
+.clr {
+  clear: both;
+}
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 8px;
+}
