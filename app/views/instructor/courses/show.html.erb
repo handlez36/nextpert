@@ -3,7 +3,9 @@
   <h1 class="text-center"><%= current_course.title %></h1>
   <br />
   <% if current_course.image.present? %>
-    <%= image_tag current_course.image, :class => 'img-responsive' %>
+    <div class="thumbnail pull-left">
+      <%= image_tag current_course.image, :class => 'img-responsive' %>
+    </div>  
   <% end %>
   <%= link_to 'Preview As Student...', course_path(current_course), :class => 'btn btn-warning pull-right' %>
   <br class="clr" />

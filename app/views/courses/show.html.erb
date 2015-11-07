@@ -4,11 +4,14 @@
   <h1><%= @course.title %></h1>
   
   <br />
-  <% if @course.image.present? %>
-    <%= image_tag @course.image, :class => 'img-responsive' %>
-  <% end %>
   
   <div class="col-sm-4 col-xs-12 text-center">
+    <% if @course.image.present? %>
+      <div class="thumbnail">
+        <%= image_tag @course.image, :class => 'img-responsive' %>
+      </div>  
+    <% end %>
+    
     <span class="label label-success"><%= number_to_currency @course.cost %></span>
     
     <% if current_user && current_user == @course.user %>
