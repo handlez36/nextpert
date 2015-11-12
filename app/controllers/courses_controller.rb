@@ -5,7 +5,12 @@ class CoursesController < ApplicationController
   end
   
   def show
-    @course = Course.find(params[:id])
+    @course = Course.find_by_id(params[:id])
+    
+    if @course.nil?
+      return render :text => "Invalid parameter", :status => :unprocessable_entity
+    end
+    
   end
   
 end

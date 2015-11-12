@@ -20,8 +20,6 @@ class Instructor::SectionsController < ApplicationController
   private
   
   def require_authorized_for_current_course
-    puts "Current user: #{current_user.inspect}"
-    puts "Current Course user: #{current_course.user.inspect}"
     if current_user != current_course.user
       return render :text => "Unauthorized User", :status => :unauthorized
     end
