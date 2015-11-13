@@ -32,6 +32,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
+            <span style="color: white"><%= current_user.email %></span>
             <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
           <% else %>
             <%= link_to "Sign up", new_user_registration_path %>
