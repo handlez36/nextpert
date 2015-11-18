@@ -18,7 +18,6 @@ class Instructor::LessonsController < ApplicationController
   end
   
   def update
-    puts "Got here"
     current_lesson.update_attributes(lesson_params)
     render :text => "updated!"
   end

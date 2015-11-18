@@ -48,7 +48,7 @@
   </div>
   
   <div class="col-xs-12">
-    <% @course.sections.order('id').each do |section| %>
+    <% @course.sections.rank(:row_order).each do |section| %>
       <br /><br />
       <div class="section">
         <h3>
