@@ -28,6 +28,9 @@ FactoryGirl.define do
   factory :lesson do
     title "Test Lesson"
     subtitle "Test Lesson Subtitle"
+    sequence "row_order" do |n|
+      n
+    end
     association :section
   end
 end

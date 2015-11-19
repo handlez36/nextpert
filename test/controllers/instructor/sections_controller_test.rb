@@ -16,7 +16,7 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
     end
   end
   
-  test "create session with different user" do
+  test "create section with different user" do
     user = create(:user)
     sign_in user
     
@@ -31,7 +31,7 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
     assert_response :unauthorized
   end
   
-  test "create session with no title" do
+  test "create section with no title" do
     user = create(:user)
     sign_in user
     
@@ -43,7 +43,8 @@ class Instructor::SectionsControllerTest < ActionController::TestCase
       }
     end
     
-    assert_response :unprocessable_entity
+    #assert_response :unprocessable_entity
+    assert_redirected_to instructor_course_path(course)
   end
   
 end

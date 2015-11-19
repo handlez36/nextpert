@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class SectionTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  include FactoryGirl::Syntax::Methods
+  
+  test "next section" do
+    
+    
+    
+  end
+  
+  
 end

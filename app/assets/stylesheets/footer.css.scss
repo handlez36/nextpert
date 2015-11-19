@@ -25,6 +25,7 @@ html {
   background-color: rgba(36,32,33,0.9);
   font-family: "Helvetica Neue", Helvetica;
   padding: 10px 0px;
+  font-weight: 100;
 /*  margin-top: 30px;*/
 }
 
@@ -41,4 +42,20 @@ html {
 
 .Site-content {
   flex: 1;
+}
+
+.social-button {
+  width: 32px;
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
+
+$footer-height-mobile: 200px;
+@media (max-width: 750px) {
+  #footer {
+    height: $footer-height-mobile;
+  }
 }

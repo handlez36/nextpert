@@ -9,7 +9,9 @@ class Instructor::SectionsController < ApplicationController
     if @section.valid?
       redirect_to instructor_course_path(current_course)
     else
-      render :new, :status => :unprocessable_entity
+      #render :new, :status => :unprocessable_entity
+      flash[:notice] = "Validation erorr"
+      redirect_to instructor_course_path(current_course)
     end
     
   end
