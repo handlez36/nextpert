@@ -52,10 +52,3 @@ html {
 .social a:hover {
   text-decoration: none;
 }
-
-$footer-height-mobile: 200px;
-@media (max-width: 750px) {
-  #footer {
-    height: $footer-height-mobile;
-  }
-}
