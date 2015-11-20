@@ -90,7 +90,7 @@ body {
 }
 
 .form-group {
-  font-family: 'Righteous', cursive;
+  /*font-family: 'Righteous', cursive;*/
   font-weight: 100;
   margin-top:10px;
 }
@@ -170,4 +170,21 @@ ul {
 
 .lessons, ui-sortable {
   padding-left: 0;
+}
+
+.user {
+  color: white;
+  font-size: 11px;
+  margin-left: 15px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: white;
+  padding: 5px;
+  font-family: "Helvetica Neue", Helvetica;
+  text-align: center;
+}
+
+.glyphicon.glyphicon-user {
+  color: white;
 }
